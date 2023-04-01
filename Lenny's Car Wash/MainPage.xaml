@@ -7,13 +7,14 @@
     <ScrollView>
         <VerticalStackLayout x:Name="selectionScreen" Padding="25">
 
+            <!-- Title -->
             <Label Text="Lenny's Car Wash"
                    FontSize="50"
                    TextColor="CadetBlue"
                    FontAttributes="Bold, Italic"
                    HorizontalOptions="CenterAndExpand" />
-
-
+            
+            <!-- Radio button options -->
             <StackLayout Margin="0,30,0,0">
                 <Label Text="Select your Wash:"
                        FontSize="25"
@@ -44,20 +45,21 @@
                 </StackLayout>
             </StackLayout>
 
+            <!-- Grid for checkbox options -->
             <StackLayout Margin="0,30,0,0">
                 <Label Text="Add Ons:"
                        FontSize="25"
                        TextColor="White"
                        HorizontalOptions="Start" />
-
-                <Grid RowDefinitions="60,*,100"
+                <!-- Grid -->
+                <Grid RowDefinitions="60,60,100"
                       ColumnDefinitions="*, *">
 
                     <Frame BorderColor="#444455" BackgroundColor="#444455" Padding="10" CornerRadius="0" 
                            Grid.Row="0" Grid.Column="0">
                         <StackLayout Orientation="Horizontal">
                             <CheckBox x:Name="chkAirFresh" Color="Black"/>
-                            <Label Text="Wheel Shine Add-On ($5.00)" TextColor="White" VerticalOptions="Center"/>
+                            <Label Text="Wheel Shine Add-On ($2.00)" TextColor="White" VerticalOptions="Center"/>
                         </StackLayout>
                     </Frame>
                     <Frame BorderColor="#444455" BackgroundColor="#444455" Padding="10" CornerRadius="0" 
@@ -78,13 +80,23 @@
                            Grid.Row="1" Grid.Column="1">
                         <StackLayout Orientation="Horizontal">
                             <CheckBox x:Name="chkVacuum" Color="Black"/>
-                            <Label Text="Vacuum Add-On ($5.00)" TextColor="White" VerticalOptions="Center"/>
+                            <Label Text="Vacuum Add-On ($2.00)" TextColor="White" VerticalOptions="Center"/>
                         </StackLayout>
                     </Frame>
                 </Grid>
-
-                
             </StackLayout>
+            
+            <!-- Submit Button -->
+            <StackLayout Margin="0,-40,0,0">
+                <Button x:Name="submitBtn1" 
+                    Text="Finalize Selections"
+                    FontSize="15"
+                    MaximumWidthRequest="200"
+                    BackgroundColor="#779977"
+                    TextColor="White"
+                    Clicked="CalcAmount"/>
+            </StackLayout>
+
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
