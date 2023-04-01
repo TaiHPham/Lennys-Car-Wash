@@ -22,6 +22,6 @@ public partial class ReceiptPage : ContentPage
 
     private void CreateNewOrder(object sender, EventArgs e)
     {
-        Navigation.PopAsync();
+        Navigation.PushAsync(new MainPage());
     }
 }

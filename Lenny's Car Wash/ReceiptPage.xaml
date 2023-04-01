@@ -11,10 +11,10 @@
                FontSize="50"
                TextColor="CadetBlue"
                FontAttributes="Bold, Italic"
-               HorizontalOptions="CenterAndExpand"/>
+               HorizontalOptions="Center"/>
 
             <!-- Receipt header -->
-            <StackLayout Margin="200,30,200,0">
+            <StackLayout Margin="0,25,0,0" HorizontalOptions="Center" WidthRequest="450">
                 <Frame BorderColor="#555566" BackgroundColor="#555566" Padding="10" CornerRadius="0">
                     <Label Text="Receipt"
                        FontSize="25"
@@ -24,7 +24,7 @@
             </StackLayout>
 
             <!-- Wash selected -->
-            <StackLayout Margin="200,0,200,0">
+            <StackLayout HorizontalOptions="Center" WidthRequest="450">
                 <Frame BorderColor="#444455" BackgroundColor="#444455" Padding="10" CornerRadius="0">
                     <StackLayout>
                         <Label x:Name="selectedWashLabel"
@@ -36,11 +36,11 @@
             </StackLayout>
 
             <!-- Add on selected -->
-            <StackLayout Margin="200,0,200,0">
+            <StackLayout HorizontalOptions="Center" WidthRequest="450">
                 <Frame BorderColor="#444455" BackgroundColor="#444455" Padding="10" CornerRadius="0">
                     <StackLayout>
                         <Label Text="Add Ons Purchased:"
-                               FontSize="25"
+                               FontSize="20"
                                TextColor="White"
                                HorizontalOptions="Start"/>
                         <Label x:Name="selectedAddOnsStack"
@@ -52,11 +52,11 @@
             </StackLayout>
 
             <!-- Total cost -->
-            <StackLayout Margin="200,0,200,0">
+            <StackLayout HorizontalOptions="Center" WidthRequest="450">
                 <Frame BorderColor="#555566" BackgroundColor="#555566" Padding="10" CornerRadius="0">
                     <StackLayout>
                         <Label x:Name="totalCostLabel"
-                               FontSize="20"
+                               FontSize="22"
                                TextColor="#FFAAAA"
                                HorizontalOptions="Start"/>
                     </StackLayout>
