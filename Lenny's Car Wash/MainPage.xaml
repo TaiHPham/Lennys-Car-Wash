@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lenny_s_Car_Wash.MainPage"
+             Background="#222233">
+
+    <ScrollView>
+        <StackLayout Padding="25">
+
+            <Label Text="Lenny's Car Wash"
+                   FontSize="50"
+                   TextColor="CadetBlue"
+                   FontAttributes="Bold, Italic"
+                   HorizontalOptions="CenterAndExpand" />
+
+
+            <StackLayout Margin="0,30,0,0">
+                <Label Text="Select your Wash:"
+                       FontSize="25"
+                       TextColor="White"
+                       HorizontalOptions="Start" />
+                <StackLayout Orientation="Vertical" Spacing="0" Margin="0,10,0,0">
+                    <Frame BorderColor="#444455" BackgroundColor="#444455" Padding="10" CornerRadius="0">
+                        <RadioButton
+                            x:Name="rdoBasicWash"
+                            Content="Basic Wash ($10.00)"
+                            TextColor="White"
+                            GroupName="wash"/>
+                    </Frame>
+                    <Frame BorderColor="#444455" BackgroundColor="#444455" Padding="10" CornerRadius="0">
+                        <RadioButton
+                            x:Name="rdoPremiumWash"
+                            Content="Premium Wash ($15.00)"
+                            TextColor="White"
+                            GroupName="wash"/>
+                    </Frame>
+                    <Frame BorderColor="#444455" BackgroundColor="#444455" Padding="10" CornerRadius="0">
+                        <RadioButton
+                            x:Name="rdoUltraWash"
+                            Content="Ultra Wash ($20.00)"
+                            TextColor="White"
+                            GroupName="wash"/>
+                    </Frame>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Margin="0,0,0,0">
+                <Label Text="Add Ons:"
+                       FontSize="25"
+                       TextColor="White"
+                       HorizontalOptions="Start" />
+                
+                <StackLayout Orientation="Vertical" Spacing="0" Margin="0,10,0,0">
+                    <Frame BorderColor="#444455" BackgroundColor="#444455" Padding="10" CornerRadius="0">
+                        <Checkbox 
+                        x:Name="chkWax" 
+                        Content="Wax"/>
+                    </Frame>
+                    
+                </StackLayout>
+            </StackLayout>
+            
+
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
