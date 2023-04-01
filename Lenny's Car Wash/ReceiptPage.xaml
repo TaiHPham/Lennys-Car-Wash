@@ -1,3 +1,10 @@
+<!-- Program Author: Tai Pham
+     Assignment: Program 3 - Lenny's Car Wash
+    
+     Description:
+     Lenny's Car Wash is an interface that allows users to select a car wash package and add-ons, 
+     and generates a receipt with the selected options and total cost.
+    -->
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
