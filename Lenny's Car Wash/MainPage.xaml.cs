@@ -48,49 +48,5 @@ public partial class MainPage : ContentPage
             Navigation.PushAsync(receiptPage);
         }
     }
-
-    /*public ReceiptPage(List<string> selectedItems, double totalPrice)
-    {
-        InitializeComponent();
-
-        // Add the selected items to the list view
-        foreach (string item in selectedItems)
-        {
-            listView.Items.Add(item);
-        }
-
-        // Display the total price
-        return totalPriceLabel.Text = $"Total Price: {totalPrice:C}";
-    }
-
-    private async void OnGenerateReceiptClicked(object sender, EventArgs e)
-    {
-        // Get the selected items and their prices
-        List<string> selectedItems = new List<string>();
-        List<decimal> selectedPrices = new List<decimal>();
-
-        if (rdoBasicWash.IsChecked)
-        {
-            selectedItems.Add((string)rdoBasicWash.Content);
-            selectedPrices.Add(10.00m);
-        }
-        if (rdoPremiumWash.IsChecked)
-        {
-            selectedItems.Add((string)rdoPremiumWash.Content);
-            selectedPrices.Add(15.00m);
-        }
-        if (rdoUltraWash.IsChecked)
-        {
-            selectedItems.Add((string)rdoUltraWash.Content);
-            selectedPrices.Add(20.00m);
-        }
-
-        // Calculate the total price
-        decimal totalPrice = selectedPrices.Sum();
-
-        // Navigate to the receipt page and pass the selected items and total price as parameters
-        await Navigation.PushAsync(new ReceiptPage(selectedItems, totalPrice));
-    }*/
-
 }
 

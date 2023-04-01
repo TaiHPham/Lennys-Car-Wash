@@ -57,16 +57,14 @@
             <!-- Total cost -->
             <StackLayout Margin="200,0,200,0">
                 <Frame BorderColor="#555566" BackgroundColor="#555566" Padding="10" CornerRadius="0">
-                        <StackLayout>
+                    <StackLayout>
                         <Label x:Name="totalCostLabel"
-                       FontSize="20"
-                       TextColor="#FFAAAA"
-                       HorizontalOptions="Start"/>
+                               FontSize="20"
+                               TextColor="#FFAAAA"
+                               HorizontalOptions="Start"/>
                     </StackLayout>
-                    </Frame>
-
+                </Frame>
             </StackLayout>
-
 
             <!-- New order -->
             <StackLayout Margin="0,30,0,0">
