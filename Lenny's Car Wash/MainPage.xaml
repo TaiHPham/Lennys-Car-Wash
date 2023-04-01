@@ -5,7 +5,7 @@
              Background="#222233">
 
     <ScrollView>
-        <StackLayout Padding="25">
+        <VerticalStackLayout x:Name="selectionScreen" Padding="25">
 
             <Label Text="Lenny's Car Wash"
                    FontSize="50"
@@ -62,7 +62,7 @@
             
 
 
-        </StackLayout>
+        </VerticalStackLayout>
     </ScrollView>
 
 </ContentPage>

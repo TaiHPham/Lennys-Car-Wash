@@ -1,4 +1,6 @@
 ﻿namespace Lenny_s_Car_Wash;
+using Microsoft.Maui;
+using Microsoft.Maui.Controls;
 
 public static class MauiProgram
 {

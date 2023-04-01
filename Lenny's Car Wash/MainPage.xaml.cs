@@ -28,9 +28,9 @@ public partial class MainPage : ContentPage
 			Console.WriteLine("No options were picked for type of wash!");
 		}
 
-		if(chkWax.Checked)
+		if()
 		{
-			tot;
+			totalCost += 5;
 		}
 
 	}
