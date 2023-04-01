@@ -44,25 +44,52 @@
                 </StackLayout>
             </StackLayout>
 
-            <StackLayout Margin="0,0,0,0">
+            <StackLayout Margin="0,30,0,0">
                 <Label Text="Add Ons:"
                        FontSize="25"
                        TextColor="White"
                        HorizontalOptions="Start" />
-                
-                <StackLayout Orientation="Vertical" Spacing="0" Margin="0,10,0,0">
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="30"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
                     <Frame BorderColor="#444455" BackgroundColor="#444455" Padding="10" CornerRadius="0">
-                        <Checkbox 
-                        x:Name="chkWax" 
-                        Content="Wax"/>
+                        <StackLayout Orientation="Horizontal">
+                            <CheckBox x:Name="chkAirFresh" Color="Black"/>
+                            <Label Text="Air Freshener Add-On ($2.00)" TextColor="White" VerticalOptions="Center"/>
+                        </StackLayout>
                     </Frame>
-                    
-                </StackLayout>
+                    <Frame BorderColor="#444455" BackgroundColor="#444455" Padding="10" CornerRadius="0">
+                        <StackLayout Orientation="Horizontal">
+                            <CheckBox x:Name="chkWax" Color="Black"/>
+                            <Label Text="Wax On Add-On ($5.00)" TextColor="White" VerticalOptions="Center"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame BorderColor="#444455" BackgroundColor="#444455" Padding="10" CornerRadius="0">
+                        <StackLayout Orientation="Horizontal">
+                            <CheckBox x:Name="chkShine" Color="Black"/>
+                            <Label Text="Wheel Shine Add-On ($5.00)" TextColor="White" VerticalOptions="Center"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame BorderColor="#444455" BackgroundColor="#444455" Padding="10" CornerRadius="0">
+                        <StackLayout Orientation="Horizontal">
+                            <CheckBox x:Name="chkVacuum" Color="Black"/>
+                            <Label Text="Vacuum Add-On ($5.00)" TextColor="White" VerticalOptions="Center"/>
+                        </StackLayout>
+                    </Frame>
+
+                </Grid>
+
+                
             </StackLayout>
-            
-
-
         </VerticalStackLayout>
     </ScrollView>
-
 </ContentPage>
