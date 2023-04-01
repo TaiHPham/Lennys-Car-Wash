@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lenny_s_Car_Wash.ReceiptPage"
+             Title="ReceiptPage"
+             Background="#222233">
+    <ScrollView>
+        <VerticalStackLayout x:Name="receiptScreen" Padding="25">
+            <!-- Title -->
+            <Label Text="Lenny's Car Wash"
+               FontSize="50"
+               TextColor="CadetBlue"
+               FontAttributes="Bold, Italic"
+               HorizontalOptions="CenterAndExpand"/>
+
+            <!-- Receipt header -->
+            <StackLayout Margin="200,30,200,0">
+                <Frame BorderColor="#555566" BackgroundColor="#555566" Padding="10" CornerRadius="0">
+                    <Label Text="Receipt"
+                       FontSize="25"
+                       TextColor="White"
+                       HorizontalOptions="Center"/>
+                </Frame>
+            </StackLayout>
+
+            <!-- Wash selected -->
+            <StackLayout Margin="200,0,200,0">
+                <Frame BorderColor="#444455" BackgroundColor="#444455" Padding="10" CornerRadius="0">
+                    <StackLayout>
+                        <Label Text="Wash Selected:"
+                               FontSize="20"
+                               TextColor="White"
+                               HorizontalOptions="Start"/>
+                        <Label x:Name="selectedWashLabel"
+                               FontSize="20"
+                               TextColor="White"
+                               HorizontalOptions="Start"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+
+            <!-- Add on selected -->
+            <StackLayout Margin="200,0,200,0">
+                <Frame BorderColor="#444455" BackgroundColor="#444455" Padding="10" CornerRadius="0">
+                    <StackLayout>
+                        <Label Text="Add Ons Selected:"
+                               FontSize="25"
+                            TextColor="White"
+                            HorizontalOptions="Start"/>
+                        <StackLayout x:Name="selectedAddOnsStack"
+                         Margin="10,10,0,0"/>
+                    </StackLayout>
+                </Frame>
+
+            </StackLayout>
+
+            <!-- Total cost -->
+            <StackLayout Margin="200,0,200,0">
+                <Frame BorderColor="#555566" BackgroundColor="#555566" Padding="10" CornerRadius="0">
+                        <StackLayout>
+                        <Label x:Name="totalCostLabel"
+                       FontSize="20"
+                       TextColor="#FFAAAA"
+                       HorizontalOptions="Start"/>
+                    </StackLayout>
+                    </Frame>
+
+            </StackLayout>
+
+
+            <!-- New order -->
+            <StackLayout Margin="0,30,0,0">
+                <Button x:Name="submitBtn2" 
+                    Text="New Order"
+                    FontSize="15"
+                    MaximumWidthRequest="200"
+                    BackgroundColor="#779977"
+                    TextColor="White"/>
+            </StackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
