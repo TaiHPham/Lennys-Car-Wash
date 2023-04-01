@@ -87,7 +87,7 @@
             </StackLayout>
             
             <!-- Submit Button -->
-            <StackLayout Margin="0,-40,0,0">
+            <StackLayout Margin="0,-60,0,0">
                 <Button x:Name="submitBtn1" 
                     Text="Finalize Selections"
                     FontSize="15"
@@ -95,6 +95,14 @@
                     BackgroundColor="#779977"
                     TextColor="White"
                     Clicked="CalcAmount"/>
+            </StackLayout>
+
+            <!-- Error -->
+            <StackLayout Margin="0,20,0,0">
+                <Label x:Name="errorMsgLabel"
+                       FontSize="20"
+                       TextColor="#FF7777"
+                       HorizontalOptions="Center"/>
             </StackLayout>
 
         </VerticalStackLayout>
